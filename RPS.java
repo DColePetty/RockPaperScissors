@@ -33,7 +33,7 @@ public class RPS
     Scanner input = new Scanner(System.in); 
     while (playerWins <= 9)
     {  
-    double percent = ( ((playerWins + .01 ) / (playerWins + computerWins + ties + .01)) * 100 );
+    double percent = ( (double)(playerWins) ) / (( (double)playerWins + (double)computerWins + (double)ties)) * 100 );
     System.out.print ("Please enter 1 for Rock, 2 for Paper, or 3 for Scissors: ");
     int one = input.nextInt();
 
